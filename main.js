@@ -67,7 +67,7 @@ grade001;
 //that takes in a grade (as a number) and returns whether or 
 //not it's below `60`.
 function isFailing(grade) {
-  return grade <= 60;  
+  return grade < 60;  
 }
 
 
@@ -168,8 +168,7 @@ student5;
 //administrator.
 // And an expert scuba diver most definitely is not.)
 function notAnElementarySchoolAdministrator(schoolLevel, role) {
-  return (schoolLevel !== 'elementary') ||
-  (schoolLevel === 'elementary') && (role !== 'administrator')
+  return (schoolLevel !== 'elementary') || (role !== 'admin')
 }
 
 const try0 = notAnElementarySchoolAdministrator('elementary', 'administrator');
